@@ -1,0 +1,31 @@
+<overlay-loader [hidden]="!displayLoader"></overlay-loader>
+
+<div class="container">
+
+    <button routerLink="/products/list" mat-flat-button>&#8592; Back To List</button>
+    <div class="row">
+        <div class="image">
+            <img [src]="product?.image" alt="">
+        </div>
+        <div class="details">
+            <div class="product-description">
+
+                <span class="category">
+                    {{product?.category}}
+                </span>
+                <h1>
+                    {{product?.title}}
+                </h1>
+                <p>{{product?.description}}</p>
+                 
+            </div>
+
+            <div class="price-rate">
+                <p>{{product?.price}}$</p>
+
+               <span>Rate :  {{product?.rating?.rate}} average based on  {{product?.rating?.count}} reviews.</span>
+            </div>
+
+        </div>
+    </div>
+</div>

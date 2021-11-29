@@ -1,0 +1,43 @@
+<div class="container">
+    <form [formGroup]="productForm" (ngSubmit)="submit()">
+        <div class="field">
+            <mat-form-field appearance="standard">
+                <mat-label>Title*</mat-label>
+                <input matInput placeholder="Title" formControlName="title">
+            </mat-form-field>
+
+
+        </div>
+        <div class="field">
+            <mat-form-field appearance="standard">
+                <mat-label>category*</mat-label>
+                <input type="text" matInput placeholder="category" formControlName="category">
+            </mat-form-field>
+
+        </div>
+        <div class="field">
+            <mat-form-field appearance="standard">
+                <mat-label>Price*</mat-label>
+                <input type="number" matInput placeholder="Price" formControlName="price">
+            </mat-form-field>
+
+        </div>
+        <div class="field">
+            <mat-form-field appearance="standard">
+                <mat-label>description*</mat-label>
+                <input type="text" matInput placeholder="description" formControlName="description">
+            </mat-form-field>
+
+        </div>
+        <div class="field">
+            <mat-form-field appearance="standard">
+                <mat-label>image*</mat-label>
+                <input type="text" matInput placeholder="image" formControlName="image">
+            </mat-form-field>
+
+        </div>
+        <button type="submit" mat-raised-button color="primary">Save</button>
+
+
+    </form>
+</div>
